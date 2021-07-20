@@ -6,15 +6,15 @@ const port = env.APP_PORT || 80;
 const delay = env.API_DELAY_RESPONSE || 0;
 
 app.get('*', async (req, res) => {
-  await process(req, res)
+  await process(req, res);
 });
 
 app.post('*', async (req, res) => {
-  await process(req, res)
+  await process(req, res);
 });
 
 app.put('*', async (req, res) => {
-  await process(req, res)
+  await process(req, res);
 });
 
 async function process(req, res) {
