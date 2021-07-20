@@ -32,6 +32,7 @@ async function process(req, res) {
 function log(req) {
    console.log('---------------------------------');
    console.log('request:', req.originalUrl);
+   console.log('method:', req.method);
    console.log('params:', req.params);
    console.log('body:', req.body);
    console.log('query:', req.query);
