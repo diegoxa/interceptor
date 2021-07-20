@@ -17,9 +17,15 @@ app.put('*', async (req, res) => {
   await process(req, res);
 });
 
+app.delete('*', async (req, res) => {
+    await process(req, res);
+});
+
 async function process(req, res) {
   log(req);
-  await sleep(delay);
+  if (delay>0) {
+      await sleep(delay);
+  }
   resolve(req, res);
 }
 
