@@ -1,4 +1,4 @@
-FROM node:16-stretch
+FROM node:16-buster
 WORKDIR /app
 
 COPY . .
